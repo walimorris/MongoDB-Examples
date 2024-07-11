@@ -1,6 +1,9 @@
-// This script will collect the collections from a source database and copy them to a target data.
-// You can pass username, password, source, and target parameters (respectively) to the script.
-// Note: source and target databases should come from the same Deployment
+// This script will copy collections from a source database and copy them to a target database using Atlas.
+// You can pass username, password, source, and target arguements (respectively) to the script.
+// Note: source and target databases should come from the same deployment and accessible by the user.
+// Example Usage: 
+// mongosh --nodb sample_restaurants_to_opensquare_dump.js <username> <password> deployment.yxqlxfh.mongodb.net/<sourcedb> deployment.yxqlxfh.mongodb.net/<targetdb>
+
 
 const args = process.argv.slice(2);
 
